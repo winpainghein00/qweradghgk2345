@@ -9,17 +9,17 @@
   <body>
     <main id="app" class="flex flex-col h-screen">
 
-      <header class="border-b-2 border-b-gray-700 py-3">
+      <header class="border-b-2  py-3 bg-gray-500">
         <div class="container mx-auto">
           <div class="flex justify-between">
             <div>
-              <h1 class="font-bold text-3xl">WPH</h1>
-              <p class="text-neutral-500">E-commerce</p>
+              <h1 class="font-bold text-3xl text-white">WPH</h1>
+              <p class="text-gray-300">E-commerce</p>
             </div>
             <div class="flex gap-3 items-center">
               <button
                 type="button"
-                class="text-gray-700 border border-gray-700 hover:bg-gray-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                class="text-white border rounded-full hover:bg-gray-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@
         tabindex="-1"
         aria-labelledby="drawer-right-label"
       >
-       <div class="flex flex-col min-h-screen p-4 ">
+       <div class="flex flex-col min-h-screen p-4 pb-0 ">
         <div class="cart-header">
           <h5
           id="drawer-right-label"
@@ -129,8 +129,9 @@
         </div> -->
         </div>
 
-
-        <div class="cart-footer flex flex-col gap-3 pt-2">
+        
+        <div class="cart-footer flex flex-col pt-3">
+          <div class="flex flex-col bg-gray-100 gap-3 p-3 rounded-md"> 
           <div class="flex justify-between">
             <p >Total</p>
             <p id="cartTotal">0</p>
@@ -142,7 +143,7 @@
               </button>
 
         </div>
-
+       </div>
        </div>
 
       </div>
