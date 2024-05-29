@@ -1,5 +1,7 @@
 export const app = document.querySelector("#app");
+
 export const openDrawer = document.querySelector("#openDrawer");
+export const searchBtn = document.querySelector("#searchBtn");
 
 export const cartItemCount = document.querySelector("#cartItemCount");
 export const cartCount = document.querySelector("#cartCount");

@@ -1,4 +1,3 @@
-
 import Shop from './src/js/Shop'
 import './style.css'
 import 'flowbite'

@@ -1,6 +1,8 @@
+import toast from "react-hot-toast";
 import { products } from "../data";
 import { cartItemGroup, openDrawer, productGroup, productTemplate } from "../selectors"
 import { createCart, updateCartCostTotal, updateCartCount, } from "./cart";
+import Swal from "sweetalert2";
 
 export const createProduct = (product) => {
     const template = productTemplate.content.cloneNode(true);
@@ -102,4 +104,12 @@ export const handleProductGroup = (event) => {
         };
         addToCartAnimation.addEventListener("finish",handleAnimationFinish)
     }
+};
+
+export const handleSearchBtn = () => {
+  Swal.fire({
+    title: "We Are Sorry 😌",
+    text: "Search is not currently available!",
+    icon: "error"
+  });
 };
