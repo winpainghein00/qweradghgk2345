@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .cat-btn.active{
     @apply bg-gray-700 text-white
 }
