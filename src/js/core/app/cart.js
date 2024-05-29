@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { cardItemTemplate, cartTotal, productGroup } from "../selectors";
+import { cardItemTemplate, cartCount, cartTotal, productGroup } from "../selectors";
 
 export const createCart = (product, quantity) => {
     const template = cardItemTemplate.content.cloneNode(true);
@@ -97,3 +97,12 @@ export const handleCartItemGroup = (event) => {
 //     updateCartCount();
 //     updateCartCostTotal();
 // };
+
+export const orderBtnHandler = () => {
+   cartCount.innerText >= 1 &&
+    Swal.fire({
+        title: "Success!",
+        text: "You Order is confirmed",
+        icon: "success"
+      });
+}
