@@ -102,7 +102,7 @@ export const orderBtnHandler = () => {
    cartCount.innerText >= 1 &&
     Swal.fire({
         title: "Success!",
-        text: "You Order is confirmed",
+        text: "Your Order is confirmed",
         icon: "success"
       });
 }
